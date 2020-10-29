@@ -1,0 +1,15 @@
+.changeBtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.itemBtn:hover + .changeBtn, .changeBtn:hover {
+  display: block;
+}
+
+.item {
+  display: inline;
+  position: relative
+}

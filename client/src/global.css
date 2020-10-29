@@ -1,0 +1,1877 @@
+@import '~antd/dist/antd.css';
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("/assets/font/SFProDisplay-Regula.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  src: url("/assets/font/SFProDisplay-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Light";
+  src: url("/assets/font/SFProDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Medium";
+  src: url("/assets/font/SFProDisplay-Medium.ttf") format("truetype");
+}
+
+.link-position {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 95%;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 95%;
+  -webkit-mask-position: center center;
+  background: black;
+}
+
+.icon-search {
+  mask-image: url("/assets/icons/search.svg");
+  -webkit-mask-image: url("/assets/icons/search.svg");
+}
+
+.eye {
+  mask-image: url("/assets/icons/eye.svg");
+  -webkit-mask-image: url("/assets/icons/eye.svg");
+}
+
+.header {
+  background: #F8F8FA;
+  padding: 12px 0;
+}
+
+.header .col-md-9 .yarm .dropdown a {
+  background: white;
+  margin-right: 3px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.202759px;
+  font-family: SFProDisplay-Medium, sans-serif;
+  padding: 10px 15px;
+}
+
+.header .col-md-9 .yarm .dropdown .dropdown-menu ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+
+.header .col-md-9 .yarm .dropdown .dropdown-menu ul li a {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.231724px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.dropdown .dropdown-menu {
+  border: none;
+  box-shadow: 0 0 10px #bbb;
+  top: 15px !important;
+}
+
+.header .col-md-9 .yarm form .input-group {
+  background: white;
+  padding: 2px 10px 2px 0;
+}
+
+.header .col-md-9 .yarm form .input-group .input-group-prepend input {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.202759px;
+  color: #000000;
+}
+
+.header .col-md-9 .dropmenu .dropdown a {
+  background: white;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.202759px;
+  font-family: SFProDisplay-Medium, sans-serif;
+  padding: 10px 15px;
+}
+
+.header .col-md-9 .dropmenu .dropdown .dropdown-menu ul {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+
+.header .col-md-9 .dropmenu .dropdown .dropdown-menu ul.call-center {
+  padding-left: 0 !important;
+}
+
+.header .col-md-9 .dropmenu .dropdown .dropdown-menu ul li a {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.231724px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.company .operator {
+  margin: 24px 0;
+}
+
+.company .operator .col-md {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.news {
+  padding-top: 60px;
+  background: #F2F2F2;
+}
+
+.news .container .yangiliklar {
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+}
+
+.news .container .easy {
+  font-family: SFProDisplay-Bold, sans-serif;
+  padding: 152px 600px 0 15px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+}
+
+.news .container .row .col-md-4 .card {
+  border: none;
+  border-radius: 4px;
+}
+
+.news .container .row .col-md-4 .card:hover {
+  box-shadow: 0 25px 35px rgba(165, 165, 166, 0.13);
+}
+
+.news .container .row .col-md-4 .card:hover .card__text {
+  opacity: 1;
+}
+
+.news .container .row .col-md-4 .card:hover .d-flex {
+  opacity: 1;
+}
+
+.news .container .row .col-md-4 .card .card__text {
+  padding: 36px 5px 20px 24px;
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: 0.110345px;
+  font-family: SFProDisplay-Medium, sans-serif;
+  opacity: 0.5;
+}
+
+.news .container .row .col-md-4 .card .d-flex {
+  font-family: SFProDisplay-Medium, sans-serif;
+  line-height: 19px;
+  letter-spacing: -0.231724px;
+  opacity: 0.5;
+}
+
+.news .container .row .col-md-4 .card .card-footer {
+  border-top: 1px solid rgba(151, 151, 151, 0.1);
+}
+.news .container .row .col-md-4 .card{
+  cursor: pointer;
+}
+.news .container .row .ucell {
+  width: 162px;
+  height: 161px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  margin-left: 84px;
+  margin-top: 81px;
+}
+
+.news .container .row .ucell .img-fluid {
+  margin-top: 35px;
+  margin-left: 1px;
+}
+
+.news .container .row .beeline {
+  width: 192px;
+  height: 191px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  transform: translateX(450px) translateY(-250px);
+  margin-top: 24px;
+}
+
+.news .container .row .beeline .img-fluid {
+  margin-top: 40px;
+  margin-left: 8px;
+}
+
+.news .container .row .perfectum {
+  width: 182px;
+  height: 181px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  margin-left: 278px;
+  margin-top: -300px;
+}
+
+.news .container .row .perfectum .img-fluid {
+  margin-top: 43px;
+  margin-left: 2px;
+}
+
+.news .container .row .ums {
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  margin-left: 0;
+  margin-top: -100px;
+}
+
+.news .container .row .ums .img-fluid {
+  margin-top: 85px;
+  margin-left: 2px;
+}
+
+.news .container .row .uzmobile {
+  width: 182px;
+  height: 183px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  margin-left: 490px;
+  margin-top: -143px;
+}
+
+.news .container .row .uzmobile .img-fluid {
+  margin-top: 40px;
+  margin-left: 2px;
+}
+
+.news .container .row .phonee {
+  margin-left: 650px;
+  margin-top: -470px;
+}
+
+.news .container .row .phonee .img-fluid {
+  margin-top: -600px;
+  transform: translateX(70px);
+}
+
+.news .container .row .phonee .phone {
+  width: 426px;
+  height: 430px;
+  border-radius: 50%;
+  background: white;
+  text-align: center;
+  transform: translateX(90px) translateY(-10px);
+  margin-top: 24px;
+}
+
+.footer li, .header li {
+  font-family: SFProDisplay-Medium, sans-serif;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px;
+  letter-spacing: 0.0772415px;
+  color: black;
+}
+
+.footer li:hover a, .header li:hover a {
+  color: #f00 !important;
+  background-color: #ffffff !important;
+}
+
+.footer li:hover, .header li:hover {
+  opacity: 1 !important;
+}
+
+.footer .foot__text {
+  padding-top: 48px;
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.088276px;
+}
+
+.footer .tel {
+  color: black;
+  opacity: 1;
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.footer .adres {
+  font-size: 13.69px;
+  line-height: 24px;
+  letter-spacing: 0 !important;
+}
+
+.footer .left .leftt .dropdown {
+  padding-left: 40px;
+}
+
+.footer .left .leftt .dropdown a {
+  background: #F8F8FA;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.202759px;
+  color: black;
+  font-family: SFProDisplay-Medium, sans-serif;
+  padding: 10px 25px 10px 16px;
+}
+
+.footer .left .leftt .sotset {
+  margin-left: 91px;
+}
+
+.footer .left .corp {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.0772415px;
+  color: black;
+  opacity: 0.3;
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
+.footer .right {
+  transform: translateX(18px);
+}
+
+.footer .right .upload {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.0993105px;
+}
+
+.footer .right a {
+  margin-left: -7px;
+}
+
+.dropdown-menu {
+  margin-top: 18px;
+}
+
+.dropdown-menu::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(46deg);
+  background: #ffffff;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+
+.dropmenyu::after {
+  display: none;
+}
+
+.beeline {
+  background: #FCC400;
+}
+
+.beeline h4 {
+  padding-top: 12px;
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+  letter-spacing: -0.15px;
+  margin-bottom: 0 !important;
+}
+
+.beeline p {
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.08px;
+  color: #FFFFFF;
+}
+
+.news .yangiliklar {
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 30px !important;
+  line-height: 36px;
+  letter-spacing: -0.15px;
+}
+
+.news .btn-block {
+  margin-top: 33px;
+  background: #3A4357;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  color: white;
+  font-family: SFProDisplay-Light, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 15px 0;
+  letter-spacing: -0.231724px;
+}
+
+.uslugi {
+  background: #F2F2F2;
+  padding-top: 30px;
+}
+
+.uslugi .card {
+  border-radius: 5px;
+}
+
+.uslugi .card img:nth-child(1) {
+  padding: 38px 51px 22px 51px;
+}
+
+.uslugi .card img:nth-child(2) {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.uslugi .card img:nth-child(3) {
+  padding-left: 60px;
+  padding-right: 59px;
+}
+
+.uslugi .card img:nth-child(4) {
+  padding-left: 54px;
+  padding-right: 53px;
+}
+
+.uslugi .card img:nth-child(6) {
+  padding-left: 49px;
+  padding-right: 48px;
+}
+
+.uslugi .card h6 {
+  padding-bottom: 2px;
+  text-align: center;
+  font-family: SFProDisplay-Medium, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.110345px;
+  color: black;
+}
+
+.beltarif {
+  background: #F2F2F2;
+}
+
+.beltarif .card {
+  background: #FFFFFF;
+  box-shadow: 0 25px 35px rgba(165, 165, 166, 0.13);
+  border-radius: 4px;
+}
+
+.beltarif .card:hover {
+  background: #edf4f9;
+}
+
+.beltarif .card:hover .name, .beltarif .card:hover .price, .beltarif .card:hover .batafsil {
+  opacity: 1;
+}
+
+.beltarif .card:hover:hover .d-flex h6, .beltarif .card:hover:hover .d-flex p {
+  opacity: 1;
+}
+
+.beltarif .card .name {
+  font-family: SFProDisplay-Medium, sans-serif;
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.110345px;
+  margin-bottom: 10px !important;
+  color: #103997;
+}
+
+.beltarif .card .price {
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.132414px;
+  opacity: 0.5;
+  color: black;
+}
+
+.beltarif .card .batafsil {
+  padding-top: 33px;
+  color: black;
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.088276px;
+  margin-bottom: 33px;
+  opacity: 0.5;
+}
+
+.beltarif .card .d-flex h6 {
+  padding-top: 18px;
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.110345px;
+  margin-bottom: 0 !important;
+  opacity: 0.5;
+  color: black;
+}
+
+.beltarif .card .d-flex p {
+  margin-top: -7px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.088276px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.beltarif .btn-block {
+  margin-top: 23px;
+  background: #3A4357;
+  mix-blend-mode: normal;
+  opacity: 0.2;
+  color: white;
+  font-family: SFProDisplay-Light, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 15px 0;
+  letter-spacing: -0.231724px;
+}
+
+.aloqa {
+  padding-top: 43px;
+  font-family: SFProDisplay-Bold, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.15px;
+}
+
+.carousel-indicators li{
+  width: 15px!important;
+  height: 15px!important;
+  border-radius: 50%!important;
+}
+
+@media (min-width: 1200px) and (max-width: 1270px) {
+  .news .ucell {
+    width: 162px;
+    height: 161px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 84px;
+    margin-top: 81px;
+  }
+
+  .news .ucell .img-fluid {
+    margin-top: 35px;
+    margin-left: 1px;
+  }
+
+  .news .beeline {
+    width: 192px;
+    height: 191px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(450px) translateY(-250px);
+    margin-top: 24px;
+  }
+
+  .news .beeline .img-fluid {
+    margin-top: 40px;
+    margin-left: 8px;
+  }
+
+  .news .perfectum {
+    width: 182px;
+    height: 181px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 278px;
+    margin-top: -300px;
+  }
+
+  .news .perfectum .img-fluid {
+    margin-top: 43px;
+    margin-left: 2px;
+  }
+
+  .news .ums {
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -100px;
+  }
+
+  .news .ums .img-fluid {
+    margin-top: 85px;
+    margin-left: 2px;
+  }
+
+  .news .uzmobile {
+    width: 182px;
+    height: 183px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 490px;
+    margin-top: -143px;
+  }
+
+  .news .uzmobile .img-fluid {
+    margin-top: 40px;
+    margin-left: 2px;
+  }
+
+  .news .phonee {
+    margin-left: 650px;
+    margin-top: -470px;
+  }
+
+  .news .phonee .img-fluid {
+    margin-top: -600px;
+    transform: translateX(70px);
+  }
+
+  .news .phonee .phone {
+    width: 426px;
+    height: 430px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(90px) translateY(-10px);
+    margin-top: 24px;
+  }
+
+  .news .phonee {
+    transform: translateX(-50px);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  .beltarif .card .d-flex h6 {
+    padding-top: 18px;
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.110345px;
+    margin-bottom: 0 !important;
+    opacity: 0.5;
+    color: black;
+  }
+
+  .beltarif .card .d-flex p {
+    margin-top: -7px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.088276px;
+    color: #000000;
+    opacity: 0.5;
+  }
+
+  .beltarif .btn-block {
+    margin-top: 23px;
+    background: #3A4357;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    color: white;
+    font-family: SFProDisplay-Light, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 15px 0;
+    letter-spacing: -0.231724px;
+  }
+
+  .uslugi .card {
+    border-radius: 5px;
+  }
+
+  .uslugi .card img:nth-child(1) {
+    padding: 38px 31px 22px 31px;
+  }
+
+  .uslugi .card img:nth-child(2) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .uslugi .card img:nth-child(3) {
+    padding-left: 30px;
+    padding-right: 39px;
+  }
+
+  .uslugi .card img:nth-child(4) {
+    padding-left: 34px;
+    padding-right: 33px;
+  }
+
+  .uslugi .card img:nth-child(6) {
+    padding-left: 39px;
+    padding-right: 38px;
+  }
+
+  .news .container .yangiliklar {
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+  }
+
+  .news .container .easy {
+    font-family: SFProDisplay-Bold, sans-serif;
+    padding: 70px 500px 0 15px;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: 0.2px;
+  }
+
+  .news .container .row .col-md-4 .card .card__text {
+    padding: 36px 15px 20px 24px;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: 0.110345px;
+    font-family: SFProDisplay-Medium, sans-serif;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex {
+    font-family: SFProDisplay-Medium, sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.231724px;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .data {
+    padding: 0 52px 3px 24px;
+  }
+
+  .news .container .row .ucell {
+    width: 132px;
+    height: 131px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 84px;
+    margin-top: 61px;
+  }
+
+  .news .container .row .ucell .img-fluid {
+    margin-top: 25px;
+    margin-left: 1px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .beeline {
+    width: 162px;
+    height: 161px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(340px) translateY(-200px);
+    margin-top: 24px;
+  }
+
+  .news .container .row .beeline .img-fluid {
+    margin-top: 30px;
+    margin-left: 8px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .perfectum {
+    width: 152px;
+    height: 151px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: -300px;
+  }
+
+  .news .container .row .perfectum .img-fluid {
+    margin-top: 33px;
+    margin-left: 2px;
+  }
+
+  .news .container .row .ums {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+
+  .news .container .row .ums .img-fluid {
+    margin-top: 70px;
+    margin-left: 2px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .news .container .row .uzmobile {
+    width: 152px;
+    height: 153px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 370px;
+    margin-top: -143px;
+  }
+
+  .news .container .row .uzmobile .img-fluid {
+    margin-top: 30px;
+    margin-left: 2px;
+  }
+
+  .news .container .row .phonee {
+    margin-left: 450px;
+    margin-top: -350px;
+  }
+
+  .news .container .row .phonee .img-fluid {
+    margin-top: -450px;
+    transform: translateX(70px);
+    width: 80%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee .phone {
+    width: 356px;
+    height: 360px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(90px) translateY(-10px);
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .header .col-md-12 {
+    display: block !important;
+  }
+
+  .header .col-md-9 .yarm form {
+    display: none;
+  }
+
+  .beltarif {
+    background: #F2F2F2;
+  }
+
+  .beltarif .card .name {
+    font-family: SFProDisplay-Medium, sans-serif;
+    padding-top: 16px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.110345px;
+    margin-bottom: 10px !important;
+  }
+
+  .beltarif .card .price {
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.132414px;
+    opacity: 0.5;
+    color: black;
+  }
+
+  .beltarif .card .batafsil {
+    padding-top: 33px;
+    color: black;
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.088276px;
+    margin-bottom: 33px;
+    opacity: 0.5;
+  }
+
+  .beltarif .card .d-flex h6 {
+    padding-top: 18px;
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.110345px;
+    margin-bottom: 0 !important;
+    opacity: 0.5;
+    color: black;
+  }
+
+  .beltarif .card .d-flex p {
+    margin-top: -7px;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.088276px;
+    color: #000000;
+    opacity: 0.5;
+  }
+
+  .beltarif .btn-block {
+    margin-top: 23px;
+    background: #3A4357;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    color: white;
+    font-family: SFProDisplay-Light, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 15px 0;
+    letter-spacing: -0.231724px;
+  }
+
+  .footer ul {
+    padding-left: 0 !important;
+  }
+
+  .footer .tel {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .footer .adres {
+    font-size: 12.69px;
+  }
+
+  .company .operator .col-sm-4 {
+    border: 5px solid white;
+  }
+
+  .uslugi .col-md-2 {
+    padding-left: 0 !important;
+    padding-right: 6px !important;
+  }
+
+  .uslugi .col-md-2 .card {
+    border-radius: 5px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(1) {
+    padding: 38px 21px 22px 21px;
+  }
+
+  .news .container .yangiliklar {
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+  }
+
+  .news .container .easy {
+    font-family: SFProDisplay-Bold, sans-serif;
+    padding: 70px 300px 0 15px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+
+  .news .container .row .col-md-4 .card .card__text {
+    padding: 36px 15px 20px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.110345px;
+    font-family: SFProDisplay-Medium, sans-serif;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex {
+    font-family: SFProDisplay-Medium, sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.231724px;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .data {
+    font-size: 13px;
+    padding: 0 10px 3px 24px;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .prosmotr {
+    font-size: 13px;
+  }
+
+  .news .container .row .ucell {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 34px;
+    margin-top: 61px;
+  }
+
+  .news .container .row .ucell .img-fluid {
+    margin-top: 25px;
+    margin-left: 1px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .beeline {
+    width: 142px;
+    height: 141px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(238px) translateY(-180px);
+    margin-top: 24px;
+  }
+
+  .news .container .row .beeline .img-fluid {
+    margin-top: 30px;
+    margin-left: 8px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .perfectum {
+    width: 132px;
+    height: 131px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 160px;
+    margin-top: -180px;
+  }
+
+  .news .container .row .perfectum .img-fluid {
+    margin-top: 25px;
+    margin-left: 2px;
+  }
+
+  .news .container .row .ums {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -50px;
+  }
+
+  .news .container .row .ums .img-fluid {
+    margin-top: 60px;
+    margin-left: 2px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .news .container .row .uzmobile {
+    width: 132px;
+    height: 133px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 310px;
+    margin-top: -143px;
+  }
+
+  .news .container .row .uzmobile .img-fluid {
+    margin-top: 10px;
+    margin-left: 2px;
+  }
+
+  .news .container .row .phonee {
+    margin-left: 340px;
+    margin-top: -350px;
+  }
+
+  .news .container .row .phonee .img-fluid {
+    margin-top: -370px;
+    transform: translateX(90px);
+    width: 80%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee .phone {
+    width: 280px;
+    height: 284px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(90px) translateY(-10px);
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 575.9px) and (max-width: 767.9px) {
+  .company .operator .col-sm-4 {
+    border: 5px solid white;
+  }
+
+  .beltarif .col-sm-12 {
+    padding: 10px 100px;
+  }
+
+  .footer ul {
+    padding-left: 0 !important;
+  }
+
+  .footer ul .foot__text {
+    font-size: 14px;
+  }
+
+  .footer .tel {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .footer .adres {
+    font-size: 12.69px;
+  }
+
+  .footer .left .leftt .sotset {
+    margin-left: 20px;
+  }
+
+  .footer .right {
+    text-align: right;
+  }
+
+  .footer .right .upload {
+    font-size: 15px;
+  }
+
+  .uslugi .col-md-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .uslugi .col-md-2 .card {
+    border-radius: 5px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(1) {
+    padding: 38px 61px 22px 61px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(2) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(3) {
+    padding-left: 65px;
+    padding-right: 64px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(4) {
+    padding-left: 54px;
+    padding-right: 53px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(6) {
+    padding-left: 49px;
+    padding-right: 48px;
+  }
+
+  .news .container .yangiliklar {
+    font-family: SFProDisplay-Bold, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+  }
+
+  .news .container .easy {
+    font-family: SFProDisplay-Bold, sans-serif;
+    padding: 70px 200px 0 15px;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+
+  .news .container .row .col-md-4 .card .card__text {
+    padding: 36px 15px 20px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.110345px;
+    font-family: SFProDisplay-Medium, sans-serif;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex {
+    font-family: SFProDisplay-Medium, sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.231724px;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .data {
+    font-size: 13px;
+    padding: 0 10px 3px 24px;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .prosmotr {
+    font-size: 13px;
+  }
+
+  .news .container .row .ucell {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 61px;
+  }
+
+  .news .container .row .ucell .img-fluid {
+    margin-top: 20px;
+    margin-left: 1px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .beeline {
+    width: 122px;
+    height: 121px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(180px) translateY(-150px);
+    margin-top: 24px;
+  }
+
+  .news .container .row .beeline .img-fluid {
+    margin-top: 27px;
+    margin-left: 8px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .perfectum {
+    width: 112px;
+    height: 111px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -140px;
+  }
+
+  .news .container .row .perfectum .img-fluid {
+    margin-top: 20px;
+    margin-left: 2px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .ums {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: -40px;
+  }
+
+  .news .container .row .ums .img-fluid {
+    margin-top: 48px;
+    margin-left: 2px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .news .container .row .uzmobile {
+    width: 112px;
+    height: 113px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: -143px;
+  }
+
+  .news .container .row .uzmobile .img-fluid {
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 70%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee {
+    margin-left: 240px;
+    margin-top: -300px;
+  }
+
+  .news .container .row .phonee .img-fluid {
+    margin-top: -260px;
+    transform: translateX(81px);
+    width: 80%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee .phone {
+    width: 200px;
+    height: 204px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(90px) translateY(-10px);
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 466px) and (max-width: 576px) {
+  .company .operator .col-sm-4 {
+    border: 5px solid white;
+  }
+
+  .beltarif .col-sm-12 {
+    padding: 10px 100px;
+  }
+
+  .footer ul {
+    padding-left: 0 !important;
+  }
+
+  .footer .tel {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .footer .adres {
+    font-size: 12.69px;
+  }
+
+  .footer .left .leftt .sotset {
+    margin-left: 11px;
+  }
+
+  .header .col-md-12 {
+    display: block !important;
+  }
+
+  .news .container .easy {
+    font-family: SFProDisplay-Bold, sans-serif;
+    padding: 70px 50px 0 15px;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+
+  .news .container .row .col-md-4 {
+    padding: 0 100px;
+    margin-top: 20px;
+  }
+
+  .news .container .row .col-md-4 .card .card__text {
+    padding: 36px 15px 20px 24px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.110345px;
+    font-family: SFProDisplay-Medium, sans-serif;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex {
+    font-family: SFProDisplay-Medium, sans-serif;
+    line-height: 19px;
+    letter-spacing: -0.231724px;
+    opacity: 0.5;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .data {
+    font-size: 13px;
+    padding: 0 100px 3px 24px;
+  }
+
+  .news .container .row .col-md-4 .card .d-flex .prosmotr {
+    font-size: 13px;
+  }
+
+  .news .container .row .ucell {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 61px;
+  }
+
+  .news .container .row .ucell .img-fluid {
+    margin-top: 15px;
+    margin-left: 1px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .beeline {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(180px) translateY(-150px);
+    margin-top: 24px;
+  }
+
+  .news .container .row .beeline .img-fluid {
+    margin-top: 24px;
+    margin-left: 5px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .perfectum {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -100px;
+  }
+
+  .news .container .row .perfectum .img-fluid {
+    margin-top: 20px;
+    margin-left: 2px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .ums {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: -50px;
+  }
+
+  .news .container .row .ums .img-fluid {
+    margin-top: 38px;
+    margin-left: 2px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .news .container .row .uzmobile {
+    width: 91px;
+    height: 91px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: -103px;
+  }
+
+  .news .container .row .uzmobile .img-fluid {
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 70%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee {
+    margin-left: 200px;
+    margin-top: -300px;
+  }
+
+  .news .container .row .phonee .img-fluid {
+    margin-top: -190px;
+    transform: translateX(85px);
+    width: 140px;
+    height: 200px;
+  }
+
+  .news .container .row .phonee .phone {
+    width: 130px;
+    height: 134px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(90px) translateY(-10px);
+    margin-top: 104px;
+  }
+
+  .uslugi .col-md-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .uslugi .col-md-2 .card {
+    border-radius: 5px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(1) {
+    padding: 38px 31px 22px 31px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(2) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(3) {
+    padding-left: 65px;
+    padding-right: 64px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(4) {
+    padding-left: 54px;
+    padding-right: 53px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(6) {
+    padding-left: 49px;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 465.9px) {
+  .company .operator .col-sm-4 {
+    border: 5px solid white;
+  }
+
+  .beltarif .aloqa {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .beltarif .col-sm-12 {
+    padding: 10px 5px;
+  }
+
+  .beltarif .col-sm-12 .card .name {
+    padding-top: 14px;
+    font-size: 14px;
+    /*line-height: 15px;*/
+    letter-spacing: 0.110345px;
+    margin-bottom: 5px !important;
+  }
+
+  .beltarif .col-sm-12 .card .price {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.112414px;
+    opacity: 0.5;
+    color: black;
+  }
+
+  .beltarif .col-sm-12 .card .batafsil {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.088276px;
+    margin-bottom: 25px;
+    opacity: 0.5;
+  }
+
+  .beltarif .col-sm-12 .card .d-flex h6 {
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .beltarif .col-sm-12 .card .d-flex p {
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer ul {
+    padding-left: 0 !important;
+  }
+
+  .footer .tel {
+    font-size: 10px;
+    line-height: 10px;
+  }
+
+  .footer .adres {
+    font-size: 12.69px;
+  }
+
+  .footer .left .corp {
+    padding-left: 0 !important;
+  }
+
+  .footer .left .leftt .dropdown {
+    padding-left: 0 !important;
+  }
+
+  .footer .left .leftt .sotset {
+    margin-left: 11px;
+  }
+
+  .header .col-md-9 {
+    display: block !important;
+  }
+
+  .header .col-md-9 .dropmenu {
+    display: block !important;
+  }
+
+  .header .col-md-9 .dropmenu .dropdown {
+    padding: 5px 0;
+  }
+
+  .header .col-md-9 .dropmenu .dropdown .call {
+    padding-right: 39px !important;
+  }
+
+  .header .col-md-9 .yarm .dropdown {
+    padding: 5px 0;
+  }
+
+  .uslugi .col-md-2 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .uslugi .col-md-2 .card {
+    border-radius: 5px;
+  }
+
+  .uslugi .col-md-2 .card h6 {
+    font-size: 14px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(1) {
+    padding: 20px 31px 20px 31px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(2) {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(3) {
+    padding-left: 65px;
+    padding-right: 64px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(4) {
+    padding-left: 54px;
+    padding-right: 53px;
+  }
+
+  .uslugi .col-md-2 .card img:nth-child(6) {
+    padding-left: 49px;
+    padding-right: 48px;
+  }
+
+  .news .container .easy {
+    font-family: SFProDisplay-Bold, sans-serif;
+    padding: 70px 50px 0 15px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  .news .container .row .ucell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .news .container .row .ucell .img-fluid {
+    margin-top: 15px;
+    margin-left: 1px;
+    width: 70%;
+    height: 65%;
+  }
+
+  .news .container .row .beeline {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(100px) translateY(-80px);
+    margin-top: 20px;
+  }
+
+  .news .container .row .beeline .img-fluid {
+    margin-top: 17px;
+    margin-left: 0px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .perfectum {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: -90px;
+  }
+
+  .news .container .row .perfectum .img-fluid {
+    margin-top: 13px;
+    margin-left: 2px;
+    width: 60%;
+    height: 55%;
+  }
+
+  .news .container .row .ums {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: -10px;
+  }
+
+  .news .container .row .ums .img-fluid {
+    margin-top: 30px;
+    margin-left: 2px;
+    width: 60%;
+    height: 25%;
+  }
+
+  .news .container .row .uzmobile {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: -63px;
+  }
+
+  .news .container .row .uzmobile .img-fluid {
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 70%;
+    height: 75%;
+  }
+
+  .news .container .row .phonee {
+    margin-left: 200px;
+    margin-top: -300px;
+  }
+
+  .news .container .row .phonee .img-fluid {
+    margin-top: -80px;
+    transform: translateX(-20px);
+    width: 120px;
+    height: 180px;
+  }
+
+  .news .container .row .phonee .phone {
+    width: 100px;
+    height: 104px;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    transform: translateX(-10px) translateY(60px);
+    margin-top: 104px;
+  }
+}
+
+@media (max-width: 769px) {
+  .header .col-md-9 {
+    flex-direction: column;
+  }
+
+  .header .col-md-9 .dropmenu.d-flex.ml-sm-2:nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .header .col-md-9 {
+    margin-top: 20px;
+  }
+
+  .header .col-md-9 form {
+    margin-top: 10px;
+  }
+
+  .header .col-md-9 .yarm {
+    display: block !important;
+  }
+
+  .header .col-md-9 .dropdown {
+    width: 100% !important;
+  }
+
+  .header .col-md-9 .dropdown a.btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .container .col-md-9 form {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .container > form {
+    display: none;
+  }
+}
+
+.pre-wrap {
+  overflow: unset;
+  white-space: pre-wrap;
+}
+
+/*# sourceMappingURL=main.css.map */
